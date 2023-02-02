@@ -1,0 +1,23 @@
+/* hide sections until they are shown via the click events */
+#questions,
+#final,
+#highscores,
+#trueorfalse {
+    display: none;  
+  } 
+
+/* Remove bullet points from answers list */
+ul.nobullets {
+list-style-type: none;
+}
+
+/* Answer button styling */
+.ansBtn,
+.ansBtn:hover,
+.ansBtn:active,
+.ansBtn:focus,
+.ansBtn:active:focus {
+    box-shadow: none;
+    outline: none;
+    background-color: #3b21d1ad;
+}
