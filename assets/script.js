@@ -69,7 +69,7 @@ const questions = [ // array of objects
     {
         // question 3
         question: "String values must be enclosed within ____ when being assigned to variables.",
-        answers: ["1. commas", "2. curly brackets", "3. quotes", "4. parentheses"],
+        answers: ["1. commjs as", "2. curly brackets", "3. quotes", "4. parentheses"],
         correctAnswer: "2"
     },
     {
@@ -82,7 +82,6 @@ const questions = [ // array of objects
 
 
 // Functions
-
 // timer
 function setTime() {
     let timerInterval = setInterval(function () {
@@ -108,7 +107,7 @@ function startQuiz() {
     setQuestion(questionCount);
 }
 
-// function to set question; takes in a count and displays the next question/answers
+// function to set questions
 function setQuestion(id) {
     if (id < questions.length) {
         questionEl.textContent = questions[id].question;
