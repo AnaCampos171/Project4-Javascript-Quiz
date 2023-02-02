@@ -10,14 +10,3 @@
 ul.nobullets {
 list-style-type: none;
 }
-
-/* Answer button styling */
-.ansBtn,
-.ansBtn:hover,
-.ansBtn:active,
-.ansBtn:focus,
-.ansBtn:active:focus {
-    box-shadow: none;
-    outline: none;
-    background-color: #3b21d1ad;
-}
