@@ -23,4 +23,4 @@ Many Thanks to the UCR Coding Bootcamp Academic team and my wonderful classmates
 N/A
 ## Link to deployed application: 
 
-https://anacampos171.github.io/Project4-JavaScript-Quiz/
+https://anacampos171.github.io/Project4-Javascript-Quiz/
