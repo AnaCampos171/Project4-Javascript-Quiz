@@ -69,7 +69,7 @@ const questions = [ // array of objects
     {
         // question 3
         question: "String values must be enclosed within ____ when being assigned to variables.",
-        answers: ["1. commjs as", "2. curly brackets", "3. quotes", "4. parentheses"],
+        answers: ["1. commas", "2. curly brackets", "3. quotes", "4. parentheses"],
         correctAnswer: "2"
     },
     {
