@@ -5,22 +5,20 @@ let scoreEl = document.querySelector("#score");
 
 const introEl = document.querySelector("#intro");
 
-// section questions
 //question section
 const questionsEl = document.querySelector("#questions");
-//where question goes
 let questionEl = document.querySelector("#question");
-// how many questions they have answered
+// amt of questions answered 
 let questionCount = 0;
-// div yaynay
+// trueorfalse div
  const trueorfalseEl = document.querySelector("#trueorfalse");
 
-// section final
+// final section
 const finalEl = document.querySelector("#final");
-// user initials
+// initials
 let initialsInput = document.querySelector("#initials");
 
-// section highscores
+// highscores section
 const highscoresEl = document.querySelector("#highscores");
 // ordered list
 let scoreListEl = document.querySelector("#score-list");
@@ -37,7 +35,7 @@ const ans1Btn = document.querySelector("#answer1");
 const ans2Btn = document.querySelector("#answer2");
 const ans3Btn = document.querySelector("#answer3");
 const ans4Btn = document.querySelector("#answer4");
-// submit-score
+// submit score
 const submitScrBtn = document.querySelector("#submit-score");
 // goback
 const goBackBtn = document.querySelector("#goback");
@@ -118,7 +116,7 @@ function setQuestion(id) {
     }
 }
 
-// function to check answer and then move to next question
+// function verifies answer and moves to next question
 function checkAnswer(event) {
     event.preventDefault();
 
@@ -132,7 +130,7 @@ function checkAnswer(event) {
         p.style.display = 'none';
     }, 1000);
 
-    // answer checker
+    // verify answer
     if (questions[questionCount].correctAnswer === event.target.value) {
         p.textContent = "Correct!";
     } else if (questions[questionCount].correctAnswer !== event.target.value) {
@@ -144,7 +142,7 @@ function checkAnswer(event) {
     if (questionCount < questions.length) {
         questionCount++;
     }
-    // call setQuestion to bring in next question when any ansBtn is clicked
+    // setQuestion- next question appears when ansBtn is clicked
     setQuestion(questionCount);
 }
 
@@ -183,11 +181,10 @@ function storeScores() {
 }
 
 function displayScores() {
-    // Get stored scores from localStorage
-    // Parsing the JSON string to an object
+    // retrieve scores from localStorage Parsing the JSON string to an object
     let storedScoreList = JSON.parse(localStorage.getItem("scoreList"));
 
-    // If scores were retrieved from localStorage, update the scorelist array to it
+    //  update the scorelist array when retrieved from localstorage
     if (storedScoreList !== null) {
         scoreList = storedScoreList;
     }
@@ -200,7 +197,7 @@ function clearScores() {
 }
 
 // EventListeners
-// Start timer and display first question when click start quiz
+// Start timer and display first question when click startquiz
 startBtn.addEventListener("click", startQuiz);
 
 // Check answers loop
